@@ -22,8 +22,8 @@
                     }
 
                     
-                    console.log(Module.Validacion.validaArregloNum());
-                    if (Module.Validacion.validaArregloNum() == false)
+                    //console.log(Module.Validacion.validaArregloNum());
+                    if (Module.Validacion.validaArregloNum())
                     {
  
                         throw new Module.Exceptions.UserExcepction("El Arreglo debe de tener solo número");
@@ -44,16 +44,24 @@
         },
         Validacion:{
                 validaArregloNum: function(){
-                    Module.Data.arr.forEach(function(valor) {
+                    
+                    var find = false;
+                    for(let i = 0; i < Module.Data.arr.length; i +=1)
+                    {
+                        if (!Number.isInteger(Module.Data.arr[i]) )
+                        {
+                            find = true;
+                        }
                         
-                        if (!Number.isInteger(valor))
-                         {
-                           console.log(Number.isInteger(valor));
-                           return false;
-                         }
-                            
-                        
-                    });
+                    }
+
+                    if (find)
+                    {
+                        return true;
+                    }else 
+                    {
+                        return false;
+                    }
                     
                 }
         },
