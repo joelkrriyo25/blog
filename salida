@@ -1,0 +1,32 @@
+
+FallidoSalida de consola
+Started by user Joel C
+Running as SYSTEM
+Building in workspace /Users/Shared/Jenkins/Home/workspace/CalidadDeSoftware
+[CalidadDeSoftware] $ /Users/joelcarrillo/Developer/apache-maven-3.6.2/bin/mvn -Dbrowser=chrome test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------< selenium-cucumber-java:selenium-cucumber-java >------------
+[INFO] Building selenium-cucumber-java 1.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ selenium-cucumber-java ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/Shared/Jenkins/Home/workspace/CalidadDeSoftware/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ selenium-cucumber-java ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.044 s
+[INFO] Finished at: 2019-09-30T07:53:28-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.2:compile (default-compile) on project selenium-cucumber-java: Error while storing the mojo status: /Users/Shared/Jenkins/Home/workspace/CalidadDeSoftware/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst (Permission denied) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE
